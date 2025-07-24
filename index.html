@@ -2,8 +2,16 @@
   <head>
   </head>
   <body>
-     <label class="block text-sm font-medium text-gray-700">Key:</label>
-                                <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm border p-2" placeholder="e.g. username">
+  <div>
+  <label class="block text-sm font-medium text-gray-700">User Information:</label>
+  <input type="text" id="nameInput" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm border p-2" placeholder="Name">
+   <input type="text" id="emailInput" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm border p-2" placeholder="Email">
+   <input type="number" id="ageInput" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm border p-2" placeholder="Age">
+   </div>
+
+   <div class="bg-gray-800 text-white p-4 rounded-lg font-mono text-sm">
+     <h3 class="font-medium mb-2">Code:</h3>
+       <pre class="whitespace-pre-wrap">
 // Save object to localStorage
 const user = {
   name: 'John',
@@ -17,5 +25,13 @@ const storedUser = JSON.parse(
   localStorage.getItem('user')
 );
 console.log(storedUser.name); // 'John'
+           </pre>
+         </div>
+    </div>
+</div>
+
+
+
+    
 </body>
 </html>
