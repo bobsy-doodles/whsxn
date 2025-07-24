@@ -1,0 +1,13 @@
+// Save object to localStorage
+const user = {
+  name: 'John',
+  email: 'john@example.com',
+  age: 30
+};
+localStorage.setItem('user', JSON.stringify(user));
+
+// Get object from localStorage
+const storedUser = JSON.parse(
+  localStorage.getItem('user')
+);
+console.log(storedUser.name); // 'John'
